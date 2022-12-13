@@ -21,9 +21,87 @@
         <category>其他</category>
       </categories>
       <tags>
-        <tag>jQuery</tag>
-        <tag>表格</tag>
-        <tag>表单验证</tag>
+        <tag>其他</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>使用hexo搭建个人博客</title>
+    <url>/2022/12/14/%E4%BD%BF%E7%94%A8hexo%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/</url>
+    <content><![CDATA[<h2 id="环境配置"><a href="#环境配置" class="headerlink" title="环境配置"></a>环境配置</h2><h3 id="win10安装Nodejs"><a href="#win10安装Nodejs" class="headerlink" title="win10安装Nodejs"></a>win10安装Nodejs</h3><ol>
+<li><p>nodejs官网下载win版本</p>
+</li>
+<li><p>切换到node的目录 <code>cd:xxxx</code></p>
+<p><img src="/%E5%AE%89%E8%A3%85nodejs.assets/image-20221212172209327.png" alt="image-20221212172209327"></p>
+</li>
+<li><p>查看node版本<code>node -v</code><img src="/%E5%AE%89%E8%A3%85nodejs.assets/image-20221212172222555.png" alt="image-20221212172222555"></p>
+</li>
+<li><p>查看npm版本<code>npm -v</code><img src="/%E5%AE%89%E8%A3%85nodejs.assets/image-20221212172310601.png" alt="image-20221212172310601"></p>
+</li>
+<li><p>安装淘宝的镜像 cnpm 管理器</p>
+<p><code>npm install -g cnpm --registry=http://registry.npm.taobao.org</code><img src="/%E5%AE%89%E8%A3%85nodejs.assets/image-20221212174816156.png" alt="image-20221212174816156"></p>
+</li>
+<li><p>查看cnpm版本<code>cnpm -v</code><img src="/%E5%AE%89%E8%A3%85nodejs.assets/image-20221212174858630.png" alt="image-20221212174858630"></p>
+</li>
+<li><p>安装hexo框架<code>cnpm install -g hexo-cli</code><img src="/%E5%AE%89%E8%A3%85nodejs.assets/image-20221212174933667.png" alt="image-20221212174933667"></p>
+</li>
+<li><p>查看hexo版本<code>hexo -v</code><img src="/%E5%AE%89%E8%A3%85nodejs.assets/image-20221212174953333.png" alt="image-20221212174953333"></p>
+</li>
+</ol>
+<h2 id="创建本地博客"><a href="#创建本地博客" class="headerlink" title="创建本地博客"></a>创建本地博客</h2><ol>
+<li><p>创建blog目录<code>mkdir E:\blog</code></p>
+<p>我选择在E盘创建一个blog文件夹<img src="/%E5%AE%89%E8%A3%85nodejs.assets/image-20221212175102968.png" alt="image-20221212175102968"></p>
+<p><img src="/%E5%AE%89%E8%A3%85nodejs.assets/image-20221212173257358.png" alt="image-20221212173257358"></p>
+</li>
+<li><p>进入blog目录</p>
+<p>因为我的nodejs在C盘，所以我先要转到E盘</p>
+<p><code>E:</code>和<code>cd E:\blog</code><img src="/%E5%AE%89%E8%A3%85nodejs.assets/image-20221212175232447.png" alt="image-20221212175232447"></p>
+</li>
+<li><p>生成博客 初始化博客<code>hexo init</code> <img src="/%E5%AE%89%E8%A3%85nodejs.assets/image-20221212175315751.png" alt="image-20221212175315751"></p>
+</li>
+<li><p>启动本地博客服务<code>hexo s</code>或<code>hexo s -p4001</code></p>
+<p>当前者无法访问时，修改端口<img src="/%E5%AE%89%E8%A3%85nodejs.assets/image-20221212175514815.png" alt="image-20221212175514815"><img src="/%E5%AE%89%E8%A3%85nodejs.assets/image-20221212175531065.png" alt="image-20221212175531065"></p>
+</li>
+<li><p>本地访问地址</p>
+<p><a href="http://localhost:4000/%E6%88%96http://localhost:4001/">http://localhost:4000/或http://localhost:4001/</a></p>
+</li>
+<li><p>创建新的文章 <code>hexo n &quot;我的第一篇文章&quot;</code> <img src="/%E5%AE%89%E8%A3%85nodejs.assets/image-20221212175657408.png" alt="image-20221212175657408"><br><img src="/%E5%AE%89%E8%A3%85nodejs.assets/image-20221212175809624.png" alt="image-20221212175809624"></p>
+</li>
+<li><p>查看文章目录</p>
+<p><img src="/%E5%AE%89%E8%A3%85nodejs.assets/image-20221212180836569.png" alt="image-20221212180836569"></p>
+</li>
+<li><p>返回blog目录</p>
+<p><img src="/%E5%AE%89%E8%A3%85nodejs.assets/image-20221212180922482.png" alt="image-20221212180922482"></p>
+</li>
+<li><p>清理<code>hexo clean</code><br>生成<code>hexo g</code><img src="/%E5%AE%89%E8%A3%85nodejs.assets/image-20221212182122887.png" alt="image-20221212182122887"></p>
+</li>
+</ol>
+<h2 id="上传github实现云托管"><a href="#上传github实现云托管" class="headerlink" title="上传github实现云托管"></a>上传github实现云托管</h2><ol>
+<li><p>Github创建一个新的仓库 <code>YourGithubName.github.io</code></p>
+<p>在这里我的库名是 rongrongworking，你要改成你自己github对应的库名</p>
+<p><img src="/%E5%AE%89%E8%A3%85nodejs.assets/image-20221212183939027.png" alt="image-20221212183939027"></p>
+</li>
+<li><p>在blog目录下安装git部署插件</p>
+<p><code>cnpm install --save hexo-deployer-git</code><img src="/%E5%AE%89%E8%A3%85nodejs.assets/image-20221212184040704.png" alt="image-20221212184040704"></p>
+</li>
+<li><p>配置本地博客根目录下的 _config.yml 文件（注意空格和引号）</p>
+<figure class="highlight yml"><table><tr><td class="code"><pre><span class="line"><span class="comment"># Deployment</span></span><br><span class="line"><span class="comment">## Docs: https://hexo.io/docs/deployment.html</span></span><br><span class="line"> <span class="attr">deploy:</span></span><br><span class="line">  	<span class="attr">type:</span> <span class="string">‘git’</span></span><br><span class="line"> 		<span class="attr">repo:</span> <span class="string">https://github.com/rongrongworking/rongrongworking.github.io.git</span></span><br><span class="line">  		<span class="attr">branch:</span> <span class="string">master</span></span><br></pre></td></tr></table></figure>
+</li>
+<li><p>部署到Github仓库里<code>hexo d</code>	</p>
+</li>
+<li><p>部署完成后，访问这个地址就可以查看博客了<a href="https://rongrongworking.github.io/">https://rongrongworking.github.io/</a></p>
+<p><img src="/%E4%BD%BF%E7%94%A8hexo%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2.assets/image-20221213201431212.png" alt="image-20221213201431212"></p>
+</li>
+</ol>
+]]></content>
+      <categories>
+        <category>工具使用</category>
+        <category>hexo</category>
+      </categories>
+      <tags>
+        <tag>git</tag>
+        <tag>hexo</tag>
+        <tag>github</tag>
+        <tag>node.js</tag>
       </tags>
   </entry>
 </search>
