@@ -35,7 +35,8 @@
 </li>
 <li><p>查看node版本<code>node -v</code><img src="/img/%E4%BD%BF%E7%94%A8hexo%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2.assets/image-20221212172222555.png" alt="image-20221212172222555"></p>
 </li>
-<li><p>查看npm版本<code>npm -v</code><img src="/img/%E4%BD%BF%E7%94%A8hexo%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2.assets/image-20221212172310601.png" alt="image-20221212172310601"><br>&lt; !–more–&gt;</p>
+<li><p>查看npm版本<code>npm -v</code><img src="/img/%E4%BD%BF%E7%94%A8hexo%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2.assets/image-20221212172310601.png" alt="image-20221212172310601"></p>
+<span id="more"></span>
 </li>
 <li><p>安装淘宝的镜像 cnpm 管理器</p>
 <p><code>npm install -g cnpm --registry=http://registry.npm.taobao.org</code><img src="/img/%E4%BD%BF%E7%94%A8hexo%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2.assets/image-20221212174816156.png" alt="image-20221212174816156"></p>
